@@ -5,12 +5,26 @@
 <h2>HTML 22200078's Forms</h2>
 
 <form action="/action_page.php">
+  <p><input type="date"></p>
+  <p><input type="submit" value="Submit"></p>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
-</form> 
+  <fieldset>
+    <legend>성별</legend>
+        남성 <input type="radio" name="gender" value="male" checked />
+        여성 <input type="radio" name="gender" value="female" />
+    </fieldset>
+    <fieldset>
+        <legend>취미</legend>
+        운동 <input type="checkbox" name="hobby" value="exercise" checked />
+        영화 <input type="checkbox" name="hobby" value="movie" />
+        음악 <input type="checkbox" name="hobby" value="music" />
+        기타 <input type="checkbox" name="hobby" value="ect" />
+    </fieldset>
+</form>
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
