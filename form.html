@@ -2,40 +2,61 @@
 <html>
 
 <style>
-    div {
-        color:white;
-        background-color:DodgerBlue;
-        border:4px solid lavender;
+	input {
+    	color: black;
+    }
+    
+    #fname {
+    	background-color:orange;
+    }
+
+    #lname {
+    	background-color:rgb(216, 2, 245);
     }
 </style>
 
 <body>
-
-
     
 <h2>HTML 22200078's Forms</h2>
 
 <form action="/action_page.php">
-  <p><input type="date"></p>
-  <p><input type="submit" value="Submit"></p>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-  
-  <fieldset>
-    <legend>성별</legend>
-        남성 <input type="radio" name="gender" value="male" checked />
-        여성 <input type="radio" name="gender" value="female" />
+    <p><input type="date"></p>
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="MinSeop"><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Kim"><br><br>
+    
+    <h4>자기소개를 적어주세요</h4>
+    <textarea name="profile" cols="60" rows="6">저는 포항에 사는 24살 김민섭입니다.</textarea><br />
+
+
+    <h4>과일을 선택해주세요</h4>
+    <select name = 'fruit'>
+        <option value = "apple"> 사과 </option>
+        <option value = "peach"> 복숭아 </option>
+        <option value = "banana"> 바나나 </option>
+        <option value = "watermelon"> 수박 </option>
+    </select>
+
+    <fieldset>
+        <legend>성별</legend>
+            남성 <input type="radio" name="gender" value="male" checked />
+            여성 <input type="radio" name="gender" value="female" />
     </fieldset>
+
     <fieldset>
         <legend>취미</legend>
-        게임 <input type="checkbox" name="hobby" value="game" checked />
-        영화 <input type="checkbox" name="hobby" value="movie" />
+        영화 <input type="checkbox" name="hobby" value="movie" checked />
+        게임 <input type="checkbox" name="hobby" value="game"  />
+        드라마 <input type="checkbox" name="hobby" value="drama" /><br>
         음악 <input type="checkbox" name="hobby" value="music" />
         기타 <input type="checkbox" name="hobby" value="ect" />
     </fieldset>
+
+    <input type="submit" value="Submit">
+
 </form>
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
